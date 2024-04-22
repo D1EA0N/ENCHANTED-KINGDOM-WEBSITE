@@ -6,7 +6,6 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
      user-select: none;
-
  }
  *{
     margin: 0;
@@ -67,7 +66,6 @@ nav{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-
  @font-face {
     src: url(resources/fonts/FSP\ DEMO\ -\ Nvcnt\ sns\ wd\ ltrLght\ Bold\ 600.otf);
     font-family: mainfont;
