@@ -43,6 +43,22 @@ nav{
     font-size: 14px;
     font-family: mainfont;
 }
+.nav-links ul li a:hover{
+    color: #13d49a;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #13d49a ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
  @font-face {
     src: url(resources/fonts/FSP\ DEMO\ -\ Nvcnt\ sns\ wd\ ltrLght\ Bold\ 600.otf);
     font-family: mainfont;
