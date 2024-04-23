@@ -32,6 +32,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+/*navigation links/texts*/
 .nav-links{
     flex: 1;
     text-align: center;
