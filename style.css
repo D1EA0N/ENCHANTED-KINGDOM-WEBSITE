@@ -13,10 +13,10 @@ html {
     font-family: mainfont;
 }
 .logo{
-    width: 105px;
+    width: 180px;
     position: absolute;
     top: 14px;
-    left: 52px;
+    left: 150px;
 }
 .header{
     min-height: 100vh;
