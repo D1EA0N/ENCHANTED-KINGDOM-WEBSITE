@@ -6,12 +6,17 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
      user-select: none;
-
  }
  *{
     margin: 0;
     padding: 0;
     font-family: mainfont;
+}
+.logo{
+    width: 105px;
+    position: absolute;
+    top: 14px;
+    left: 52px;
 }
 .header{
     min-height: 10vh;
@@ -29,12 +34,13 @@ nav{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
+    text-align: center;
+    padding-right: 100px;
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 70px 12px;
     position: relative;
 }
 .nav-links ul li a{
@@ -42,6 +48,23 @@ nav{
     text-decoration: none;
     font-size: 14px;
     font-family: mainfont;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #13d49a ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-links ul li:hover::after,
+.nav-links ul li:hover a {
+    color: #13d49a; /* Change text color on hover */
+}
+.nav-links ul li:hover::after{
+    width: 100%;
 }
  @font-face {
     src: url(resources/fonts/FSP\ DEMO\ -\ Nvcnt\ sns\ wd\ ltrLght\ Bold\ 600.otf);
