@@ -14,9 +14,9 @@ html {
     font-family: mainfont;
 }
 .header{
-    min-height: 100vh;
+    min-height: 10vh;
     width: 100%;
-    background: whitesmoke;
+    background: white;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -46,4 +46,19 @@ nav{
  @font-face {
     src: url(resources/fonts/FSP\ DEMO\ -\ Nvcnt\ sns\ wd\ ltrLght\ Bold\ 600.otf);
     font-family: mainfont;
+}
+.reach-links {
+    display: flex;
+    justify-content: space-between; 
+    width: auto; 
+    margin: auto ; 
+}
+
+.reach-links img {
+    width: 1; 
+    height: auto; 
+    justify-content: space-between;
+}
+.reach-links div {
+    text-align: center;
 }
