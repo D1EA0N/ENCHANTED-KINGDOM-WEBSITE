@@ -26,7 +26,7 @@ html {
     min-height: 10vh;
     width: 100%;
     background: #A4040A;
-    box-shadow: 0 10rem 10rem rgba(0, 0, 0, 0.15) !important;
+    
     background-position: center;
     position: relative;
 }
@@ -40,6 +40,7 @@ html {
 .header-content{
     min-height: 39.4vh;
     background: url(resources/img1.png);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
