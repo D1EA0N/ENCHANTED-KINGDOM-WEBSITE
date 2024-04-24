@@ -25,7 +25,7 @@ html {
 .header-logo{
     min-height: 10vh;
     width: 100%;
-    background: #A4040A;
+    background-image: linear-gradient(to right, rgb(206, 71, 13), rgb(221, 221, 81));
     box-shadow: 0 10rem 10rem rgba(0, 0, 0, 0.15) !important;
     background-position: center;
     position: relative;
@@ -75,7 +75,6 @@ html {
 .nav-body{
     text-align: center;
     color: #fff;
-    padding-top: 180px;
 }
 .nav-bar img{
     width: 30px;
@@ -119,13 +118,15 @@ html {
   padding: 0.6em 2em;
   border: rgb(122, 14, 14) solid 0.15em;
   border-radius: 0.25em;
-  color: rgba(193, 5, 5, 0.649);
+  color: rgba(14, 14, 14, 0.649);
   font-size: 1.5em;
   font-weight: 600;
   cursor: pointer;
-  overflow: hidden;
+  overflow: hidden ;
   transition: border 300ms, color 300ms;
   user-select: none;
+  width: 250px;
+  height: 50px;
 }
 
 .button p {
@@ -145,7 +146,7 @@ html {
   position: absolute;
   width: 9em;
   aspect-ratio: 1;
-  background: rgb(153, 1, 1);
+  background-image: linear-gradient(to left, red, yellow);
   opacity: 50%;
   border-radius: 50%;
   transition: transform 500ms, background 300ms;
