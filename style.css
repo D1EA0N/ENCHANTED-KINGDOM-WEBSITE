@@ -10,27 +10,74 @@ html {
  *{
     margin: 0;
     padding: 0;
-    font-family: mainfont;
+    font-family: nexa;
+}
+/* font style */
+@font-face {
+    src: url(resources/fonts/Nexa-ExtraLight.ttf);
+    font-family: nexa;
+}
+@font-face {
+    src: url(resources/fonts/Nexa-Heavy.ttf);
+    font-family: nexa-bold;
+}
+/* ------------- */
+.header-logo{
+    min-height: 10vh;
+    width: 100%;
+    background: #A4040A;
+    box-shadow: 0 10rem 10rem rgba(0, 0, 0, 0.15) !important;
+    background-position: center;
+    position: relative;
 }
 .logo{
     width: 200px;
     position: absolute;
-    top: 9px;
+    top: 6px;
     left: 50%; /* Set left to 50% */
     transform: translateX(-50%); /* Use transform to move the element back by half of its width */
 }
-.header{
-    min-height: 10vh;
-    width: 100%;
-    background: #D81324;
-    background-size: 10%;
-    background-position: center;
+.header-content{
+    min-height: 39.4vh;
+    background: url(resources/img1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
 }
+.header-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Optional: Centers the image horizontally */
+}
+.header-content p{
+    color: #fff;
+    text-align: left;
+    padding-left: 138.6px;
+}
+.header-text1{
+    font-size: calc(1.375rem + 1.2vw);
+    padding-top: 42px;
+    font-weight: 650;
+}
+.header-text2{
+    font-size: calc(1.375rem + 1.2vw);
+    font-family: nexa-bold;
+    margin-top: -12px;
+}
+.header-text3{
+    font-size: 16px;  
+    padding-top: 9.3px;
+}
+/*----------------------------------------------------------------------------*/
 .nav-body{
     text-align: center;
     color: #fff;
     padding-top: 180px;
+}
+.nav-bar img{
+
 }
 .nav-bar a{
     margin: 70px auto 0;
@@ -56,8 +103,4 @@ html {
     background-color: #fff;
     z-index: -1;
     transition: 0.5s;
-}
- @font-face {
-    src: url(resources/fonts/FSP\ DEMO\ -\ Nvcnt\ sns\ wd\ ltrLght\ Bold\ 600.otf);
-    font-family: mainfont;
 }
