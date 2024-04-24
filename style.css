@@ -146,7 +146,7 @@ html {
   position: absolute;
   width: 9em;
   aspect-ratio: 1;
-  background-image: linear-gradient(to left, red, yellow);
+  background-image: linear-gradient( red, yellow);
   opacity: 50%;
   border-radius: 50%;
   transition: transform 500ms, background 300ms;
