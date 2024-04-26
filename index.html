@@ -3,57 +3,103 @@
 <head>
     <title>Santa Rosa</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="resources/logo-footer.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/icons/logo-footer.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <!--HEADER START-->
-    <section class="header">
-        <div class="header-logo">
-            <a href="index.html"><img src="resources/logo-header.png" class="logo"></a>
+    <header>
+        <a href="#" class="logo"><img src="resources/logo-header.png" alt=""></a>
+        <nav class="navbar">
+            <a class="active" href="index.html">HOME</a>
+            <a href="index.html">ABOUT US </a>
+            <a href="index.html">GOVERNMENT</a>
+            <a href="index.html">E-SERVICES</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="bar"></i>
         </div>
-        <div class="header-content">
-            <p class="header-text1">WELCOME TO THE</p>
-            <p class="header-text2">CITY OF SANTA ROSA</p>
-            <p class="header-text3">The city is driven by transparent and accountable local <br><strong>governance, effective civil servants and empowered <br>citizenry</strong></p>
-        </div>
-    </section>
+    <script>
+        let menu = document.querySelector('#bar')
+        let navbar = document.querySelector('.navbar')
+
+        menu.onclick = () =>{
+            bar.classList.toggle('fa-times')
+            navbar.classList.toggle('active')
+        }
+    </script>
+    </header>
     <!--HEADER END-->
 
-    <!--NAV BOX START-->
-    <section class="nav-body">
+    <!--HOME SECTION START-->
+    <section class="container">
+        <div class="wrapper">
+            <div class="slider">
+                <img id="slide1" src="resources/slide-img/parasayo.jpeg" alt="">
+                <img id="slide2" src="resources/slide-img/pup.jpg" alt="">
+                <img id="slide3" src="resources/slide-img/church.jpg" alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="#slide1"></a>
+                <a href="#slide2"></a>
+                <a href="#slide3"></a>
+            </div>
+        </div>
         <div class="nav-bar">
             <button class="button" onclick="window.location.href='about_us.html';">
-                <span><img src="resources/icn-about_us.png" alt="About Us Icon"></span>
+                <img src="resources/icons/icn-about_us.png" alt="About Us Icon"><span></span>
                 About Us
             </button>
-            <button class="button" onclick="window.location.href='full_disclosure.html';">
-                <span><img src="resources/icn-government_officials.png" alt="Full Disclosure Icon"></span>
-                Full Disclosure
-            </button>
-            <button class="button" onclick="window.location.href='citizens_charters.html';">
-                <span><img src="resources/icn-government_officials.png" alt="Citizen's Charters Icon"></span>
-                Citizen's Charters
-            </button>
-            <button class="button" onclick="window.location.href='online_forms.html';">
-                <span><img src="resources/icn-online_forms.png" alt="Online Forms Icon"></span>
-                Online Forms
-            </button>
-            <button class="button" onclick="window.location.href='online_payments.html';">
-                <span><img src="resources/icn-online_payments.png" alt="Online Payments Icon"></span>
-                Online Payments
-            </button>
             <button class="button" onclick="window.location.href='eservices.html';">
-                <span><img src="resources/icn-eServices.png" alt="eServices Icon"></span>
+                <img src="resources/icons/icn-eServices.png" alt="eServices Icon"><span></span>
                 eServices
-            </button>
-            <button class="button" onclick="window.location.href='bid_opportunities.html';">
-                <span><img src="resources/icn-bid_opportunities.png" alt="Bid Opportunities Icon"></span>
-                Bid Opportunities
             </button>
         </div>
     </section>
-    <!--NAV BOX END-->
+    <!--HOME SECTIION END-->
+
+    <!-- FOOTER SECTION START -->
+    <footer>
+        <div class="f-container">
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p><i class="fa-solid fa-location-dot"></i>J. P Rizal, City Government Center, City of Santa Rosa, Laguna, Philippines, 4026</p>
+                <p><i class="fa-solid fa-phone"></i>Local Number: (049)530-0015(Local 0)</p>
+                <p><i class="fa-solid fa-phone"></i>Manila Line: (02) 8519-4024</p>
+                <br>
+                <h2>Follow Us</h2>
+                <ul class="links">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> City Mayor</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Departments</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> News</a></li>
+                </ul>
+            </div>
+            <div class="government-links">
+                <h2>Government Links</h2>
+                <ul class="info">
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Office Of The President</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Office Of The Vice President</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Senate Of The Philippines</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> House Of The Representatives</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Supreme Court</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Court Of Appeals</a></li>
+                  <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Sandiganbayan</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
 </body>
 </html>
