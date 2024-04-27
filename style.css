@@ -214,8 +214,14 @@ header .icons #bar{
 
 /* button section start */
 .nav-bar{
-    justify-content: center;
-    padding-top: 0.3rem;
+    display: flex; /* Make it a flex container */
+    flex-direction: row; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 1rem;
+}
+.nav-bar button{
+    margin-left: 1rem;
 }
 .nav-bar img{
     width: 45px;
@@ -224,7 +230,7 @@ header .icons #bar{
     margin-right: 10px;
     vertical-align: middle;
 }
-.button {
+.button{
     all: unset;
     display: inline-block;
     align-items: center;
@@ -237,15 +243,13 @@ header .icons #bar{
     font-weight: 600;
     cursor: pointer;
     overflow: hidden ;
-    /* transition: border 300ms, color 300ms; */
     user-select: none;
     width: 250px;
     height: 50px;
-    margin-left: 245px;
+    /* margin-left: 245px; */
 }
 .button p {
     z-index: 1;
-
 }
 .nav-bar button span{
     width: 0%;    
@@ -331,21 +335,28 @@ footer .f-container .fa-solid{
 .quick-links ul li{
     list-style: none;
 }
-.quick-links ul li a{
+.quick-links ul li a, .quick-links ul li i{
     color: #fff;
     margin-bottom: 10px;
     text-decoration: none;
     display: inline-block;
+}
+.quick-links ul li a:hover{
+    transform: translateY(-3px);
 }
 .government-links{
     width: calc(35% - 60px);
 }
 .government-links .info li{
     display: flex;
+    list-style: none;
     margin-bottom: 6px;
 }
-.government-links .info li a{
+.government-links .info li a, .government-links ul li i{
     color: #fff;
+}
+.government-links .info li a:hover{
+    transform: translateX(3px);
 }
 @media (max-width: 991px){
     footer{
