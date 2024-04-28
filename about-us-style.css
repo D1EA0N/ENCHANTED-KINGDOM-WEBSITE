@@ -164,3 +164,66 @@
 .history_button:active + .popup-text {
     display: block;
 }
+/* about us */
+.container {
+    margin-top: 10px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .container-header {
+    cursor: pointer;
+    background-image: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 100px;
+  }
+  
+  .container-header:hover {
+    background-color: darkgray;
+  }
+  
+  .container-content {
+    margin-top: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+    font-size:25px;
+  }
+  .container-checkbox {
+    display: none;
+  }
+  
+  .container-checkbox:checked + .container-header + .container-content {
+    max-height: max-content; 
+  }
+  
+  .toggle-button {
+    border: none;
+    background-color: rgb(230, 135, 135);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: rgb(225, 28, 28);
+  }
+  
+  .toggle-buttonsub {
+    border: none;
+    background-color: rgb(242, 242, 242);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-buttonsub:hover {
+    background-color: rgb(216, 23, 23);
+  }
