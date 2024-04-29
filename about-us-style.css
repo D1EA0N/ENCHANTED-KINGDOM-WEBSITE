@@ -227,3 +227,10 @@
   .toggle-buttonsub:hover {
     background-color: rgb(216, 23, 23);
   }
+
+  /*heritage image*/
+  .heritage_image{
+    width:700px;
+    height:350px;
+  }
+  /*heritage image*/
