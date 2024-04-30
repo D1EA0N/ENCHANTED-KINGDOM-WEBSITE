@@ -318,6 +318,10 @@ input[type="radio"]{
         width: 369px;
         height: 350px;
     }
+    .vm-cont img, .rep-cont img {
+        width: 367px;
+        height: 350px;
+    }
     .vm-details {
         margin-left: 20px;
     }
