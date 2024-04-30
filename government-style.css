@@ -1,0 +1,315 @@
+@font-face {
+    src: url(resources/fonts/Nexa-ExtraLight.ttf);
+    font-family: nexa;
+}
+@font-face {
+    src: url(resources/fonts/Nexa-Heavy.ttf);
+    font-family: nexa-bold;
+}
+.body{
+    position: relative;
+}
+.head1{
+    background: url(resources/government-officials-models.jpg);
+    min-height: 100px;
+    padding-top: 15rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.head1 h1{
+    font-size: 2.9rem;
+    color: #fff;
+    font-family: nexa-bold;
+    font-weight: bold;
+    padding-bottom: 5rem;
+    padding-left: 4.2rem;
+    text-align: left;
+}
+.gov-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 2rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
+}
+.gov-container h1{
+    font-size: 2.3rem;
+    color: #A4040A;
+    font-family: nexa-bold;
+    padding-bottom: 20px;
+    padding-top: 60px;
+}
+
+/* MAYOR START */
+.mayor-sec{
+    width: 1216px;
+    height: 588px;
+    background: whitesmoke;
+    border: 1px solid #000;
+    border-radius: 25px;
+    content: "";
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.img-cont{
+    position: relative;
+    width: 516px;
+    height: 500px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.img-cont img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.mayor-sec .mayor-details{
+    width: 630px;
+    margin-left: 15px;
+    margin-right: 0;
+    margin-top: 50px;
+}
+.mayor-details h2{
+    font-size: 2.7rem;
+    font-family: nexa-bold;
+    padding-bottom: 20px;
+}
+.mayor-details ul{
+    margin: 0 20px 0 30px;
+}
+/* MAYOR END */
+
+/* VICE MAYOR/REP START */
+.vm-rep-container{
+    width: 1320px;
+    height: 559px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-bottom: 400px;
+}
+.vice-m{
+    padding-right: 10px;
+}
+.vm-rep-container h2{
+    font-size: 1.7rem;
+    color: #A4040A;
+    font-family: nexa-bold;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.vice-mayor-sec, 
+.rep-sec{
+    width: 636px;
+    height: 446px;
+    background: whitesmoke;
+    border: 1px solid #000;
+    border-radius: 25px;
+    content: "";
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.vm-cont, .rep-cont{
+    position: relative;
+    width: 294px;
+    height: 350px;
+    margin: 15px;
+    border-radius: 5px;
+}
+.vm-cont img, 
+.rep-cont img{
+    position: absolute;
+    width: 294px;
+    height: 350px;
+    object-fit: cover;
+}
+.vm-details{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.vm-details h3{
+    font-size: 1.7rem;
+    font-family: nexa-bold;
+    padding-bottom: 20px;
+}
+.vm-details ul{
+    margin: 0 20px 0 30px;
+}
+.rep-details{
+    margin-left: 55px;
+    margin-top: 20px;
+}
+.rep-details ul{
+    list-style: none;
+    margin: 0 20px 0 0px;
+}
+.rep-details h3{
+    font-size: 1.7rem;
+    font-family: nexa-bold;
+    padding-bottom: 20px;
+}
+/* VICE MAYOR/REP END */
+
+/* COUNCILORS START */
+.gov-wrapper{
+    max-width: 950px;   
+    width: 100%;
+    padding: 25px 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+}
+.gov-wrapper h1{
+    text-align: center;
+}
+.gov-wrapper .main-card{
+    width: 400%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease;
+}
+#two:checked ~ .main-card{
+    margin-left: -100%;
+}
+#three:checked ~ .main-card{
+    margin-left: -200%;
+}
+#four:checked ~ .main-card{
+    margin-left: -300%;
+}
+.main-card .cards{
+    width: calc(100% / 2 - 10px);
+    display: flex;
+    justify-content: space-around;
+    margin-right: 16px;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.main-card .cards .card{
+    background: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .7);
+    border-radius: 24px;
+    width: calc(100% / 4 - 10px);
+    padding: 30px;  
+    transition: all .5s ease;
+}
+.main-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .content .img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 14px;
+    background: #A4040A;
+    padding: 3px;
+    border-radius: 50%;
+}
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.card .content .details .name{
+    font-size: 20px;
+    font-family: nexa-bold;
+    color: #A4040A;
+}
+.card .content .details p{
+    padding-top: 12px;
+}
+.gov-button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.gov-button label{
+    height: 15px;
+    width: 15px;
+    background: #A4040A;
+    margin: 0 4px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.gov-button label.active{
+    width: 35px;
+}
+#one:checked ~ .gov-button.one{
+    width: 35px;
+}
+#two:checked ~ .gov-button label.two{
+    width: 35px;
+}
+#two:checked ~ .gov-button label.one{
+    width: 15px;
+}
+#three:checked ~ .gov-button label.three{
+    width: 35px;
+}
+#three:checked ~ .gov-button label.one{
+    width: 15px;
+}
+#four:checked ~ .gov-button label.four{
+    width: 35px;
+}
+#four:checked ~ .gov-button label.one{
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+@media (max-width: 768px){
+    .main-card .cards .card{
+        width: calc(100% / 2 - 10px);
+        margin: 20px 0 10px 0;
+    }
+
+}
+@media (max-width: 600px){
+    .main-card .cards .card{
+        width: 100%;
+        margin: 20px 0 10px 0;
+    }
+    .main-card .cards#special .card{
+        width: 100%;
+        height: 280px;
+        margin: 20px 0 10px 0;
+    }
+    .gov-container{
+        padding-top: 14rem;
+    }
+}
+/* COUNSILOR END */
+
+/* MODELS START */
+.gov-container .line{
+    border: 3px solid #A4040A;
+}
+.gov-container p{
+    font-family: "nexa", Arial, Helvetica, sans-serif;
+}
+.ms-gov h3{
+    color: #A4040A;
+    font-family: nexa-bold;
+    font-size: 1.7rem;
+}
+/* MODELS END */

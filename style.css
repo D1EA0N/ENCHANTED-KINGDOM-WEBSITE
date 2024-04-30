@@ -50,7 +50,7 @@ header{
 }
 .navbar a{
     font-size: 1rem;
-    font-family: Cinzel,Arial, Helvetica, sans-serif;
+    font-family: Cinzel ,Arial, Helvetica, sans-serif;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     color: #fff;
@@ -133,14 +133,14 @@ header .icons #bar{
 
 /* slider section start */
 .container{
-    padding: 2rem;
+    padding: 2rem 0 0 0;
     align-items: center;
 }
 .wrapper{
     position: relative;
-    max-width: 62rem; 
+    max-width: 90rem; 
     margin: 0 auto;
-    padding-top: 9rem;
+    padding-top: 6rem;
 }
 .slider{
     display: flex;
@@ -219,6 +219,7 @@ header .icons #bar{
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
     padding: 1rem;
+    padding-bottom: 6rem;
 }
 .nav-bar button{
     margin-left: 1rem;
@@ -267,8 +268,92 @@ header .icons #bar{
 .nav-bar button:hover{
     color: #fff;
 }
-
 /* button section end */
+
+/* SECTION START */
+.home-img{
+    min-height: 150px;
+    background: url(resources/img2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-img p{
+    color: #fff;
+    text-align: left;
+    padding-left: 138.6px;
+    font-size: 1.2rem;
+    position: relative;
+}
+.home-img #p1{
+    padding-top: 40px;
+}
+/* SECTION END */
+
+/* VIDEOS START */
+.vids{
+    width: 80%;
+    padding-top: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+}
+.vids h1{
+    font-size: 2.5rem;
+    font-family: nexa-bold;
+    color: #A4040A;
+    font-weight: 500;
+}
+.vid-line{
+    border: 3px solid #A4040A;
+}
+.vids-row{
+    content: "";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    padding-bottom: 50px;
+}
+.vids-col{
+    position: relative;
+    width: 335px;
+    height: 280px;
+    margin: 15px;
+    margin-top: 90px;
+}
+.vids-col iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.vids-col iframe:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+}
+.vid-layer h4{
+    width: 100%;
+    margin-top: 0;
+    font-family: nexa-bold;
+    text-align: center;
+    font-size: 16px;
+    bottom: -70px;
+    cursor: pointer;
+    color: #A4040A;
+    position: absolute;
+}
+/* VIDEOS END */
 
 /* footer section start*/
 footer{

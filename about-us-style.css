@@ -6,7 +6,6 @@
     src: url(resources/fonts/Nexa-Heavy.ttf);
     font-family: nexa-bold;
 }
-/* ABOUT US START */
 .au-container{
     display: flex; 
     flex-direction: column; 
@@ -14,20 +13,30 @@
     align-items: left; 
     padding: 2rem;
     margin-left: 2rem;
-    padding-top: 11rem;
-}
-/* ABOUT US END */
-
-/* BARANGAY START */
-.br-section, 
-.dep-section{
-    content: "";
+    padding-top: 2rem;
+} 
+.head1{
+    background: url(resources/img1.png);
+    min-height: 100px;
+    padding-top: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    justify-content: center; 
-    align-items: center; 
+}
+.head1 h1{
+    font-size: 2.9rem;
+    color: #fff;
+    font-family: nexa-bold;
+    font-weight: bold;
+    padding-bottom: 2.1rem;
+    padding-left: 4.2rem;
+    text-align: left;
+}
+@media (max-width: 991px){
+    .head1{
+        padding-top: 15rem;
+    }
 }
 .au-container h1,
 .au-container h2{
@@ -37,13 +46,187 @@
     font-weight: bold;
     padding-bottom: 2.1rem;
 }
-.br-img,
-.gov-img{
+.au-container h1{
+    text-align: left;
+    color:#A4040A;
+}
+/* ABOUT US START */
+.au-section{
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+.collapsible{
+    max-width: 1200px;
+    overflow: hidden;
+    font-weight: 500px;
+}
+.collapsible input{
+    display: none;
+}
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: #A4040A;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1.7rem;
+    z-index: 1;
+    padding-top: 20px;
+}   
+.collapsible label:after{
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    background: url(resources/arrow-white.png) no-repeat 0 0;
+    transition: all 0.3s ease;
+}
+@media (max-width: 991px) {
+    .collapsible label:after{
+        top: 2px;
+    }
+}
+.collapsible input:checked + label::after{
+    transform: rotate(90deg);
+}
+.collapsible input:checked + label + .collapsible-text{
+    margin-bottom: 20px;
+}
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #000;
+    line-height: 1.4;
+    color: #fff;
+    overflow-y: auto;
+    font-size: 1.2rem;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.collapsible-img{
+    max-height: 1px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    color: #fff;
+    overflow-y: auto;
+    font-size: 1.2rem;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    padding-left: 80px;
+    text-align: left;
+}
+.collapsible input#head1:checked ~ #head1{
+    max-height: 300px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    background: #A4040A;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#head2:checked ~ #head2{
+    max-height: 500px;
+    background: #A4040A;
+    opacity: 1;
+    top: 0;
+}
+/* sub */
+.collapsible input#sub-head1:checked ~ #sub-head1{
+    max-height: 500px;
+    background:  #A4040A;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#sub-head2:checked ~ #sub-head2{
+    max-height: 500px;
+    background:  #A4040A;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#sub-head3:checked ~ #sub-head3{
+    max-height: 500px;
+    background:  #A4040A;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#sub-head4:checked ~ #sub-head4{
+    max-height: 500px;
+    background:  #A4040A;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#sub-head5:checked ~ #sub-head5{
+    max-height: 500px;
+    background:  #A4040A;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 16px;
+    opacity: 1;
+    top: 0;
+}
+/* sub end */
+.collapsible input#head3:checked ~ #head3{
+    max-height: 900px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background: #A4040A;
+    opacity: 1;
+    top: 0;
+}
+.collapsible input#head4:checked ~ #head4{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #A4040A;
+    opacity: 1;
+    top: 0;
+}
+.collapsible-img h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    padding: 15px 15px 0;
+    font-family: nexa-bold;
+    text-shadow: #f4eded;
+}
+.collapsible-img h4{
+    padding: 15px 15px 0;
+}
+.collapsible-img p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.collapsible-img .ct-img{
     display: flex;
     overflow: hidden;
     position: relative;
-    width:  166px;
-    height: 166px;
+    width:  1000px;
+    height: 600px;
     margin: 15px;
     border: 1px solid #000;
     border-radius: 25px;
@@ -51,31 +234,18 @@
     justify-content: center; 
     align-items: center; 
 }
-.br-img img,
-.gov-img img{
-    position: absolute;
+.collapsible-img .ct-img img{
+    position: relative;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
-.img-layer{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: .8s;
-    background: rgba(19, 19, 19, 0.7);
-    color: #fff;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    text-align: center;
+/* ABOUT US END */
+
+/* HISTORICAL TIMELINE START */
+.ht-section{
+    padding-bottom: 100px;
 }
-.img-layer:hover,
-.img-layer h3:hover{
-    opacity: 0;
-}
-/* BARANGAY END */
-/*  */
 .timeline_title{
     font-weight: bold;
     color: red;
@@ -164,73 +334,58 @@
 .history_button:active + .popup-text {
     display: block;
 }
-/* about us */
-.container {
-    margin-top: 10px;
-    padding: 20px;
-    justify-content: center;
-  }
-  
-  .container-header {
-    cursor: pointer;
-    background-image: lightgray;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 450px;
-    height: 100px;
-  }
-  
-  .container-header:hover {
-    background-color: darkgray;
-  }
-  
-  .container-content {
-    margin-top: 15px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s linear;
-    font-size:25px;
-  }
-  .container-checkbox {
-    display: none;
-  }
-  
-  .container-checkbox:checked + .container-header + .container-content {
-    max-height: max-content; 
-  }
-  
-  .toggle-button {
-    border: none;
-    background-color: rgb(230, 135, 135);
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .toggle-button:hover {
-    background-color: rgb(225, 28, 28);
-  }
-  
-  .toggle-buttonsub {
-    border: none;
-    background-color: rgb(242, 242, 242);
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .toggle-buttonsub:hover {
-    background-color: rgb(216, 23, 23);
-  }
+/* HISTORICAL TIMELINE END */
 
-  /*heritage image*/
-  .heritage_image{
-    width:700px;
-    height:350px;
-  }
-  /*heritage image*/
+/* BARANGAY START */
+.br-section, 
+.dep-section{
+    content: "";
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 100px;
+}
+.br-img,
+.gov-img{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width:  166px;
+    height: 166px;
+    margin: 15px;
+    border: 1px solid #000;
+    border-radius: 25px;
+    box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, .7);
+    justify-content: center; 
+    align-items: center; 
+}
+.br-img img,
+.gov-img img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.img-layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .8s;
+    background: rgba(19, 19, 19, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+.img-layer h3{
+    font-family: nexa-bold;
+}
+.img-layer:hover,
+.img-layer h3:hover{
+    opacity: 0;
+}
+/* BARANGAY END */
