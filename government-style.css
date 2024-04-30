@@ -282,7 +282,51 @@ input[type="radio"]{
         width: calc(100% / 2 - 10px);
         margin: 20px 0 10px 0;
     }
+    .mayor-sec {
+        width: 400px;
+        height: 703px;
+        display: block;
+    }
+    .img-cont {
+        width: 360px;
+        height: 500px;
+    }
+    .img-cont img{
+        width: 360px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .mayor-sec .mayor-details {
+        width: 400px;
+        margin-left: 45px;
+        margin-right: 90px;
+    }
+    .vm-rep-container {
+        width: 400px;
+        height: 1200px; 
+        display: block;
+        padding-left: 0px;
+    }
+    .vice-mayor-sec, .rep-sec {
+        width: 400px;
+        height: 550px;
+        display: block;
 
+    }
+    .vm-cont, .rep-cont {
+        position: relative;
+        width: 369px;
+        height: 350px;
+    }
+    .vm-details {
+        margin-left: 20px;
+    }
+    .rep-details {
+        margin-left: 30px;
+    }
+    .vm-rep-container h2 {
+        padding-top: 30px;
+    }
 }
 @media (max-width: 600px){
     .main-card .cards .card{

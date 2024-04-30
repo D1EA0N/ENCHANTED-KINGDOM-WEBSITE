@@ -98,4 +98,29 @@
     background-color: #A4040A;
     color: #fff;
 }
+@media (max-width: 500px){
+    .service-container h1{
+        padding-top: 7rem;
+    }
+    .icon-section img {
+        position: relative;
+        height: 100px;
+    }
+    .box-col {
+        width: 280px;
+        height: 120px;
+    }
+    .text-section h2 {
+        font-size: 8px;
+        margin-right: -20px;
+    }
+    .text-section .btn {
+        font-size: xx-small;
+    }
+}
+@media (max-width: 991px){
+    .service-container h1{
+        padding-top: 7rem;
+    }
+}
 /*  */
