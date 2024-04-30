@@ -306,7 +306,7 @@
     margin-top: 30px;
 }
 .history_button{
-    display:inline-block;
+    display:inline-flex;
 }
 
 .history_button p {
@@ -324,9 +324,9 @@
 .history_button::after, .history_button::before {
     content: "";
     position: absolute;
-    width: 8.201em;
-    aspect-ratio: 1;
-    background-image: linear-gradient( red, yellow);
+    width: 4.05em;
+    aspect-ratio:1;
+    background-color: rgb(225, 28, 28);
     opacity: 50%; 
     transition: transform 0.5s, background 0.5s;
 }
