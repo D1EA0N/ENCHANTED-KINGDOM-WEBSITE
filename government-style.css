@@ -9,6 +9,9 @@
 .body{
     position: relative;
 }
+.headerr{
+    position: sticky;
+}
 .head1{
     background: url(resources/government-officials-models.jpg);
     min-height: 100px;

@@ -21,6 +21,9 @@ html {
     text-transform: capitalize; */
     transition: all .2s linear;
 }
+.headerr{
+    position: sticky;
+}
 /* ------------------------------------------------------------------------------------- */
 /* font style */
 @font-face {

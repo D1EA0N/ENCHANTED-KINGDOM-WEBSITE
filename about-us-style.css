@@ -6,6 +6,9 @@
     src: url(resources/fonts/Nexa-Heavy.ttf);
     font-family: nexa-bold;
 }
+.headerr{
+    position: sticky;
+}
 .au-container{
     display: flex; 
     flex-direction: column; 
