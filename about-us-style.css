@@ -226,7 +226,7 @@
     overflow: hidden;
     position: relative;
     width:  1000px;
-    height: 600px;
+    height: max-content;
     margin: 15px;
     border: 1px solid #000;
     border-radius: 25px;
