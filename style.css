@@ -144,11 +144,11 @@ header .icons #bar{
     position: relative;
     max-width: 90rem; 
     margin: 0 auto;
-    padding-top: 6rem;
+    padding-top: 2rem;
 }
 .slider{
     display: flex;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/ 9;
     overflow: hidden;
     height: 650px;
     width: 100%;
@@ -179,13 +179,13 @@ header .icons #bar{
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
-    background-color: #555353;
+    background-color: red;
     opacity: 0.75;
     transition: opacity 5s ease;
 }
 .slider-nav a:hover{
     opacity: 1;
-    background-color: #D81324;
+    background-color: gray;
 }
 @media only screen and (max-width: 991px) {
     .container {
@@ -265,7 +265,7 @@ header .icons #bar{
     cursor: pointer;
     overflow: hidden ;
     user-select: none;
-    width: 250px;
+    width: fit-content;
     height: 50px;
     /* margin-left: 245px; */
 }
