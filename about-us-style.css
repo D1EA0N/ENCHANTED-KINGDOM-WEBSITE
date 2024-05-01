@@ -356,11 +356,11 @@
 }
 
 .history_button:hover:before {
-    transform: translateX(-2.034em);
+    transform: translateX(-3.05rem);
 }
 
 .history_button:hover:after {
-    transform: translateX(2.034em);
+    transform: translateX(3.05rem);
 }
 
 .history_button:active:before,
