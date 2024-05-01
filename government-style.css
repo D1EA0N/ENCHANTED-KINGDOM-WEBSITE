@@ -15,7 +15,7 @@
 .head1{
     background: url(resources/government-officials-models.jpg);
     min-height: 100px;
-    padding-top: 15rem;
+    padding-top: 8rem;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     color: #fff;
     font-family: nexa-bold;
     font-weight: bold;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     padding-left: 4.2rem;
     text-align: left;
 }
@@ -35,9 +35,9 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    padding: 2rem;
+    padding: 1rem;
     margin-left: 2rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 .gov-container h1{
     font-size: 2.3rem;
