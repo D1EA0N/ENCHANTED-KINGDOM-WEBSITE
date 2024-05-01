@@ -313,9 +313,9 @@
     overflow: hidden ;
     transition: border 0.5s, color 500ms;
     user-select: none;
-    width: 50px;
+    width: 1px;
     height: 50px;
-    margin-left: 50px;
+    margin-inline:25px;
     margin-top: 30px;
     justify-content: center;
 }
@@ -356,11 +356,11 @@
 }
 
 .history_button:hover:before {
-    transform: translateX(-1em);
+    transform: translateX(-2.034em);
 }
 
 .history_button:hover:after {
-    transform: translateX(1em);
+    transform: translateX(2.034em);
 }
 
 .history_button:active:before,
